@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link rel="stylesheet" href="css/cumple.min.css"/>
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+ <body>
+        <div data-role="page" id="page">
+	<div data-role="header">
+		
+        <h1 align="center">Calcula los dias para tu cumpleaños</h1>
+	</div>
+    <div align="center">
+	<div data-role="content">	
+    
+    <h2 >BIENVENIDO...</h2>
+		<p>Esta aplicacion sirve para calcular los dias exactos que faltan para tu cumpleaños de forma facil.</p>
+        <div align="center">
+        <a  href="#datos" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline ">
+        
+        COMENZAR
+        </a>	
+        </div>	
+ </div>
+ 
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@YannetMaximiliano_GuadalupeBueno</h4>
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="datos">
+	<div data-role="header">
+		
+        <h1>Escribe tu nombre...</h1>
+	</div>
+	<div data-role="content" >
+    NOMBRE	
+ <input type="text" name="nombre" placeholder="NOMBRE" style="we:100" id="txtnombre" >
+	 <div data-role="controlgroup" data-type="horizontal" align="center">
+
+        <a  href="#page" data-transition="pop" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all ui-btn-inline ">   
+        ATRAS
+        </a>	
+        <a  href="#fechas" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " id="siguiente_nombre">
+        
+        SIGUIENTE
+        </a>	
+        </div>		
+	 </div>
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@YannetMaximiliano_GuadalupeBueno</h4>
+	</div>
+</div>
+
+<div data-role="page" id="fechas">
+	<div data-role="header">
+		
+        <h1>¿Que dia naciste?</h1>
+	</div>
+	<div align="center" data-role="controlgroup" data-type="horizontal">	
+    
+    <div align="center" style="width:100px; float:left; padding:15px">
+    Dia
+      <input type="number" name="numero" placeholder="DIA" id="diacumple">
+    
+    </div>
+     <div align="center" style="width:100px; float:left; padding:15px">
+     Mes
+    <input type="number" name="numero" placeholder="MES" id="mescumple">
+    
+    </div>
+     <div align="center" style="width:80px; float:left; padding:15px">
+     Anio
+    <input type="number" name="numero" placeholder="AÑO" id="yearcumple">
+    
+    </div>
+		 <div data-role="controlgroup" data-type="horizontal" align="center" style="clear:both">
+        <a  href="#datos" data-transition="pop" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all ui-btn-inline ">   
+        ATRAS
+        </a>	
+        <a  href="#resultado" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " id="siguiente_fecha">
+         
+        SIGUIENTE
+        </a>	
+        </div>			
+	</div>
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@YannetMaximiliano_GuadalupeBueno</h4>
+	</div>
+</div>
+
+<div data-role="page" id="resultado" >
+	<div data-role="header">
+		
+        <h1>Faltan pocos dias...</h1>
+	</div>
+	<div data-role="content">
+ <div id="Mnombre" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="Mdias" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="Mcumple" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="Mfelicidades" align="center" hidden="true" class="final">
+FELICIDADES FALTAN POCOS DIAS PARA TU CUMPLEAÑOS
+<br>
+<br>
+ <img src="cumpleaños.jpg" width="200" height="200">
+
+ </div>
+  <div id="Medad" align="center" class="final">
+ 
+ 
+ </div>
+ <div align="center">
+   <a  href="#page" data-transition="pop" class="ui-btn ui-icon-home ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " >
+         
+        INICIO
+        </a>
+ </div>       
+    </div>
+ 
+ 
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@YannetMaximiliano_GuadalupeBueno</h4>
+	</div>
+</div>
+
+    </body>
+
+</html>
